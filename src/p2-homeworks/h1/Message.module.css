@@ -1,0 +1,39 @@
+.message {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin: 10px;
+}
+
+.message img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.block {
+    background: black;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.name {
+    min-width: 250px;
+    font-weight: bold;
+    color: chartreuse;
+}
+
+.text {
+    min-width: 250px;
+    padding-top: 5px;
+    color: fuchsia;
+    word-wrap: break-word;
+}
+
+.time {
+    display: flex;
+    justify-content: end;
+    padding: 5px;
+    color: darkorchid;
+}
