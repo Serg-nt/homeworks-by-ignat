@@ -1,7 +1,14 @@
 import React from 'react'
-import Message from "./Message";
+import Message from './Message'
 
-const messageData = {
+export type MessagePropsType = {
+    avatar: string
+    name: string
+    message: string
+    time: string
+}
+
+const messageData: MessagePropsType = {
     avatar: 'https://sun9-74.userapi.com/Ph-WiuOtF985il9AvN9JqiCWedmHtSGSSTXrSA/ltEB2Z2-YO4.jpg',
     name: 'Some Name',
     message: 'some text',
@@ -14,7 +21,7 @@ function HW1() {
             <hr/>
             homeworks 1
 
-            should work (должно работать)
+            {/*should work (должно работать)*/}
 
             <Message
                 avatar={messageData.avatar}

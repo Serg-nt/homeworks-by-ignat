@@ -1,39 +1,41 @@
 .message {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    margin: 10px;
+    align-items: start;
+    border: 1px solid black;
+    background: chartreuse;
 }
 
 .message img {
-    height: 80px;
-    width: 80px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
+    border: 1px solid black;
 }
 
-.block {
+.messageBlock {
+    margin: 5px;
+    width: 400px;
+    border-radius: 5px;
     background: black;
-    margin-left: 10px;
-    padding: 10px;
-    border-radius: 10px;
 }
 
 .name {
-    min-width: 250px;
-    font-weight: bold;
-    color: chartreuse;
+    margin: 0;
+    padding: 15px;
+    color: fuchsia;
 }
 
 .text {
-    min-width: 250px;
-    padding-top: 5px;
-    color: fuchsia;
-    word-wrap: break-word;
+    margin: 0;
+    padding-left: 15px;
+    color: chartreuse;
+    opacity: 70%;
 }
 
 .time {
-    display: flex;
-    justify-content: end;
-    padding: 5px;
-    color: darkorchid;
+    margin: 10px;
+    text-align: right;
+    padding-left: 15px;
+    color: chartreuse;
+    opacity: 70%;
 }
