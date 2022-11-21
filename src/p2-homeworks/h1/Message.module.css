@@ -1,6 +1,6 @@
 .message {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     border: 1px solid black;
     background: chartreuse;
 }

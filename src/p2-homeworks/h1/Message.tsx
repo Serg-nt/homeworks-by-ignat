@@ -7,9 +7,9 @@ function Message(props: MessagePropsType) {
         <div className={classes.message}>
             <img src={props.avatar} alt="avatar" />
             <div className={classes.messageBlock}>
-                <p className={classes.name}>{props.name}</p>
-                <p className={classes.text}>{props.message}</p>
-                <p className={classes.time}>{props.time}</p>
+                <div className={classes.name}>{props.name}</div>
+                <div className={classes.text}>{props.message}</div>
+                <div className={classes.time}>{props.time}</div>
             </div>
         </div>
     )

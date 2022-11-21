@@ -1,3 +1,12 @@
 .someClass {
 
 }
+
+.spanMargin {
+    width: 150px;
+    margin: 50px;
+}
+
+.button {
+    margin-left: 10px;
+}
