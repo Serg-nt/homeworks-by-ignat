@@ -5,3 +5,10 @@
 .error {
     border: 1px solid red;
 }
+.spanError {
+    padding: 10px;
+    color: red;
+}
+.spanTotal {
+    padding: 10px;
+}
