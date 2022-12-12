@@ -17,7 +17,6 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
     const [error, setError] = useState('this field is empty') // need to fix any ++
 
     const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => { // need to fix any
-        console.log(error)
         setName(e.currentTarget.value) // need to fix
         if (e.currentTarget.value) {
             setError('')
