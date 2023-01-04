@@ -34,7 +34,7 @@ export const message0: MessageType = {
         name: 'Some Name',  // можно менять
     },
     message: {
-        text: 'some textsome textsome textsasdfdsafasdfasd fasdfasdfasdfasdfasdfasdfasd fasdfasdfasdfasdome textsome textsome textsome text', // можно менять
+        text: 'some text some text some text', // можно менять
         time: '22:00', // можно менять
     },
 }
@@ -45,7 +45,7 @@ export const friendMessage0: MessageType = {
         name: 'Friend Name', // можно менять
     },
     message: {
-        text: 'зеркальное сообщение для тренировки cзеркальное сообщение для тренировки cssзеркальное сообщение для тренировки cssзеркальное сообщение для тренировки cssss', // можно менять
+        text: 'зеркальное сообщение для тренировки css', // можно менять
         time: '22:00', // можно менять
     },
 }
