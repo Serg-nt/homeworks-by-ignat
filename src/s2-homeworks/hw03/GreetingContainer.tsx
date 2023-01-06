@@ -1,4 +1,4 @@
-import React, {ChangeEvent, KeyboardEvent, KeyboardEventHandler, useState} from 'react'
+import React, {ChangeEvent, useState} from 'react'
 import Greeting from './Greeting'
 import {UserType} from './HW3'
 
@@ -13,7 +13,7 @@ export const pureAddUser = (name: string, setError: (error: string) => void, set
         setError('Ошибка! Введите имя!')
         return
     }
-    addUserCallback(name)
+    addUserCallback(name.trim())
     setName('')
 }
 
@@ -24,7 +24,7 @@ export const pureOnBlur = (name: string, setError: (error: string) => void) => {
     }
 }
 
-export const pureOnEnter = (e: KeyboardEvent<HTMLImageElement>, addUser: () => void) => {
+export const pureOnEnter = (e: React.KeyboardEvent, addUser: () => void) => {
     // если нажата кнопка Enter - добавить
     if (e.code === 'Enter') {
         addUser()
@@ -55,7 +55,11 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
         pureOnBlur(name, setError)
     }
 
-    const onEnter = (e: KeyboardEvent<HTMLImageElement>) => {
+    const onEnter = (e: React.KeyboardEvent) => {
+        if (!name.trim()) {
+            setError('Ошибка! Введите имя!')
+            return
+        }
         pureOnEnter(e, addUser)
     }
 

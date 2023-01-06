@@ -1,4 +1,4 @@
-import React, {ChangeEvent, KeyboardEvent, KeyboardEventHandler} from 'react'
+import React, {ChangeEvent} from 'react'
 import s from './Greeting.module.css'
 
 type GreetingPropsType = {
@@ -6,7 +6,7 @@ type GreetingPropsType = {
     setNameCallback: (e: ChangeEvent<HTMLInputElement>) => void
     addUser: () => void
     onBlur: () => void
-    onEnter: (e: any) => void
+    onEnter: (e: React.KeyboardEvent) => void
     error: string
     totalUsers: number
     lastUserName?: string
